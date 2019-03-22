@@ -1,0 +1,2155 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0">
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人博客">
+<meta property="og:url" content="http://blog.wangjin.online/index.html">
+<meta property="og:site_name" content="个人博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="个人博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '6R0Z9QTPH0',
+      apiKey: 'ALGOLIA_APIKEY',
+      indexName: 'blog',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章","hits_empty":"没有找到\"${query}\"相关的文章","hits_stats":"共搜索到${hits}个相关结果，耗时${time}ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.wangjin.online/">
+
+
+
+
+
+  <title> 个人博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f861dd6e06f92eec8236dde58b0050bb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">个人博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2019/03/22/VS-Code-Prettier插件默认单引号和不添加分号/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/03/22/VS-Code-Prettier插件默认单引号和不添加分号/" itemprop="url">
+                  VS Code Prettier插件默认单引号和不添加分号
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-22T16:41:07+08:00">
+                2019-03-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="VS-Code-Prettier-插件设置不自动添加行位分号和不将单引号修改为双引号"><a href="#VS-Code-Prettier-插件设置不自动添加行位分号和不将单引号修改为双引号" class="headerlink" title="VS Code Prettier 插件设置不自动添加行位分号和不将单引号修改为双引号"></a>VS Code Prettier 插件设置不自动添加行位分号和不将单引号修改为双引号</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">"prettier.semi": false -- 行尾不添加分号</span><br><span class="line">"prettier.singleQuote": true, -- 不转换双引号，默认使用单引号</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2019/03/15/Java枚举/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/03/15/Java枚举/" itemprop="url">
+                  Java枚举
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-15T16:06:12+08:00">
+                2019-03-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>在 Java 1.5 之前，传统定义枚举的方式是借用定义常量的方式，例如定义颜色：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> RED = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> YELLOW = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> BLUE = <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+<p>在 Java 1.5 中增加了新的引用类型<code>枚举</code>。<br>Java 的枚举类型的父类均为 <code>java.lang.Enum</code>，枚举本质上是 int 值。<br>使用枚举方式定义颜色：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Color &#123;</span><br><span class="line">    RED,YELLOW,BLUE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/15/Java枚举/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2018/09/08/Docker-Compose学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2018/09/08/Docker-Compose学习笔记/" itemprop="url">
+                  Docker Compose学习笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-08T14:16:36+08:00">
+                2018-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><code>Docker Compose</code>是一个用于定义和运行多容器Docker应用程序的工具。通过使用YAML文件来配置应用程序的服务，并使用<code>docker-compose</code>相关命令从配置中创建并启动所有服务。</p>
+<p>使用Compose通常分为以下三部：</p>
+<ol>
+<li>使用<code>Dockerfile</code>定义应用</li>
+<li>使用<code>docker-compose.yml</code>定义服务</li>
+<li>使用<code>docker-compose up</code>构建并启动应用</li>
+</ol>
+<p><code>docker-compose.yml</code>配置文件一般长这样：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">version: '3'</span><br><span class="line">services:</span><br><span class="line">  web:</span><br><span class="line">    build: .</span><br><span class="line">    ports:</span><br><span class="line">    - "5000:5000"</span><br><span class="line">    volumes:</span><br><span class="line">    - .:/code</span><br><span class="line">    - logvolume01:/var/log</span><br><span class="line">    links:</span><br><span class="line">    - redis</span><br><span class="line">  redis:</span><br><span class="line">    image: redis</span><br><span class="line">volumes:</span><br><span class="line">  logvolume01: &#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="安装Docker-Compose（Linux）"><a href="#安装Docker-Compose（Linux）" class="headerlink" title="安装Docker Compose（Linux）"></a>安装Docker Compose（Linux）</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li><p>运行下面的命令下载最新的Docker Compose</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo curl -L <span class="string">"https://github.com/docker/compose/releases/download/1.22.0/docker-compose-<span class="variable">$(uname -s)</span>-<span class="variable">$(uname -m)</span>"</span> -o /usr/<span class="built_in">local</span>/bin/docker-compose</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>为<code>docker-compose</code>命令添加可执行权限</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo chmod +x /usr/<span class="built_in">local</span>/bin/docker-compose</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试安装是否正确</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose --version</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo rm /usr/<span class="built_in">local</span>/bin/docker-compose</span><br></pre></td></tr></table></figure>
+<h1 id="官方Starting-Up"><a href="#官方Starting-Up" class="headerlink" title="官方Starting Up"></a>官方Starting Up</h1><h2 id="步骤一：设置"><a href="#步骤一：设置" class="headerlink" title="步骤一：设置"></a>步骤一：设置</h2><ol>
+<li><p>创建一个测试目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir composetest</span><br><span class="line">$ <span class="built_in">cd</span> composetest</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个名为<code>app.py</code>的文件：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> redis</span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line">cache = redis.Redis(host=<span class="string">'redis'</span>, port=<span class="number">6379</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_hit_count</span><span class="params">()</span>:</span></span><br><span class="line">    retries = <span class="number">5</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="keyword">return</span> cache.incr(<span class="string">'hits'</span>)</span><br><span class="line">        <span class="keyword">except</span> redis.exceptions.ConnectionError <span class="keyword">as</span> exc:</span><br><span class="line">            <span class="keyword">if</span> retries == <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">raise</span> exc</span><br><span class="line">            retries -= <span class="number">1</span></span><br><span class="line">            time.sleep(<span class="number">0.5</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route('/')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">()</span>:</span></span><br><span class="line">    count = get_hit_count()</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Hello World! I have been seen &#123;&#125; times.\n'</span>.format(count)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    app.run(host=<span class="string">"0.0.0.0"</span>, debug=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>上述例子中的<code>redis</code>是redis容器的在应用所属网络上的hostname，多个docker应用处于相同网络下时，通过hostname即可互相访问。</p>
+<ol start="3">
+<li>创建另一个名为<code>requirements.txt</code>的文件并添加以下内容：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">flask</span><br><span class="line">redis</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="步骤二：创建Dockerfile"><a href="#步骤二：创建Dockerfile" class="headerlink" title="步骤二：创建Dockerfile"></a>步骤二：创建Dockerfile</h2><p>在这个步骤中，创建一个Dockerfile来构建Docker镜像。这个镜像包含Python环境和Python应用所需的所有依赖。</p>
+<p>在项目目录中创建一个名为<code>Dockerfile</code>的文件并添加以下内容：<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> python:<span class="number">3.4</span>-alpine</span><br><span class="line"><span class="keyword">ADD</span><span class="bash"> . /code</span></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /code</span></span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> pip install -r requirements.txt</span></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> [<span class="string">"python"</span>, <span class="string">"app.py"</span>]</span></span><br></pre></td></tr></table></figure></p>
+<p>Dockerfile构建为镜像步骤：</p>
+<ul>
+<li>以Python 3.4-alpine镜像为基础构建一个镜像</li>
+<li>把当前目录<code>.</code>下的所有文件添加到镜像的<code>/code</code>目录中</li>
+<li>设置工作目录为<code>/code</code></li>
+<li>运行安装Python依赖的命令</li>
+<li>设置容器默认启动命令为<code>python app.py</code></li>
+</ul>
+<h2 id="步骤三：在Compose文件中定义服务"><a href="#步骤三：在Compose文件中定义服务" class="headerlink" title="步骤三：在Compose文件中定义服务"></a>步骤三：在Compose文件中定义服务</h2><p>在项目目录中创建一个名为<code>docker-compose.yml</code>的文件并添加以下内容：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line"><span class="attr">  web:</span></span><br><span class="line"><span class="attr">    build:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">    ports:</span></span><br><span class="line"><span class="bullet">     -</span> <span class="string">"5000:5000"</span></span><br><span class="line"><span class="attr">  redis:</span></span><br><span class="line"><span class="attr">    image:</span> <span class="string">"redis:alpine"</span></span><br></pre></td></tr></table></figure>
+<p>上面这个Compose文件定义了两个服务，<code>web</code>和<code>redis</code>。</p>
+<p><code>web</code>服务：</p>
+<ul>
+<li>使用当前目录下的<code>Dockerfile</code>所构建的镜像</li>
+<li>在容器和宿主机中暴露<code>5000</code>端口，这是Flask web的默认端口</li>
+</ul>
+<p><code>redis</code>服务使用Docker Hub registry中的镜像构建。</p>
+<h2 id="步骤四：使用Compose构建和运行应用"><a href="#步骤四：使用Compose构建和运行应用" class="headerlink" title="步骤四：使用Compose构建和运行应用"></a>步骤四：使用Compose构建和运行应用</h2><ol>
+<li><p>在工程目录下执行<code>docker-compose</code>命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose up</span><br><span class="line">Building web</span><br><span class="line">Step 1/5 : FROM python:3.4-alpine</span><br><span class="line"> ---&gt; 73266cf72156</span><br><span class="line">Step 2/5 : ADD . /code</span><br><span class="line"> ---&gt; 93d41f61c2f8</span><br><span class="line">Step 3/5 : WORKDIR /code</span><br><span class="line"> ---&gt; Running <span class="keyword">in</span> 74e35fbb2368</span><br><span class="line">Removing intermediate container 74e35fbb2368</span><br><span class="line"> ---&gt; 2dc16f910cce</span><br><span class="line">Step 4/5 : RUN pip install -r requirements.txt</span><br><span class="line"> ---&gt; Running <span class="keyword">in</span> c82ef26c57ea</span><br><span class="line">Collecting flask (from -r requirements.txt (line 1))</span><br><span class="line">  Downloading https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl (91kB)</span><br><span class="line">Collecting redis (from -r requirements.txt (line 2))</span><br><span class="line">  Downloading https://files.pythonhosted.org/packages/3b/f6/7a76333cf0b9251ecf49efff635015171843d9b977e4ffcf59f9c4428052/redis-2.10.6-py2.py3-none-any.whl (64kB)</span><br><span class="line">Collecting Jinja2&gt;=2.10 (from flask-&gt;-r requirements.txt (line 1))</span><br><span class="line">  Downloading https://files.pythonhosted.org/packages/7f/ff/ae64bacdfc95f27a016a7bed8e8686763ba4d277a78ca76f32659220a731/Jinja2-2.10-py2.py3-none-any.whl (126kB)</span><br><span class="line">Collecting click&gt;=5.1 (from flask-&gt;-r requirements.txt (line 1))</span><br><span class="line">  Downloading https://files.pythonhosted.org/packages/34/c1/8806f99713ddb993c5366c362b2f908f18269f8d792aff1abfd700775a77/click-6.7-py2.py3-none-any.whl (71kB)</span><br><span class="line">Collecting Werkzeug&gt;=0.14 (from flask-&gt;-r requirements.txt (line 1))</span><br><span class="line">  Downloading https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl (322kB)</span><br><span class="line">Collecting itsdangerous&gt;=0.24 (from flask-&gt;-r requirements.txt (line 1))</span><br><span class="line">  Downloading https://files.pythonhosted.org/packages/dc/b4/a60bcdba945c00f6d608d8975131ab3f25b22f2bcfe1dab221165194b2d4/itsdangerous-0.24.tar.gz (46kB)</span><br><span class="line">Collecting MarkupSafe&gt;=0.23 (from Jinja2&gt;=2.10-&gt;flask-&gt;-r requirements.txt (line 1))</span><br><span class="line">  Downloading https://files.pythonhosted.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz</span><br><span class="line">Building wheels <span class="keyword">for</span> collected packages: itsdangerous, MarkupSafe</span><br><span class="line">  Running setup.py bdist_wheel <span class="keyword">for</span> itsdangerous: started</span><br><span class="line">  Running setup.py bdist_wheel <span class="keyword">for</span> itsdangerous: finished with status <span class="string">'done'</span></span><br><span class="line">  Stored <span class="keyword">in</span> directory: /root/.cache/pip/wheels/2c/4a/61/5599631c1554768c6290b08c02c72d7317910374ca602ff1e5</span><br><span class="line">  Running setup.py bdist_wheel <span class="keyword">for</span> MarkupSafe: started</span><br><span class="line">  Running setup.py bdist_wheel <span class="keyword">for</span> MarkupSafe: finished with status <span class="string">'done'</span></span><br><span class="line">  Stored <span class="keyword">in</span> directory: /root/.cache/pip/wheels/33/56/20/ebe49a5c612fffe1c5a632146b16596f9e64676768661e4e46</span><br><span class="line">Successfully built itsdangerous MarkupSafe</span><br><span class="line">Installing collected packages: MarkupSafe, Jinja2, click, Werkzeug, itsdangerous, flask, redis</span><br><span class="line">Successfully installed Jinja2-2.10 MarkupSafe-1.0 Werkzeug-0.14.1 click-6.7 flask-1.0.2 itsdangerous-0.24 redis-2.10.6</span><br><span class="line">Removing intermediate container c82ef26c57ea</span><br><span class="line"> ---&gt; b7c7a9180594</span><br><span class="line">Step 5/5 : CMD [<span class="string">"python"</span>, <span class="string">"app.py"</span>]</span><br><span class="line"> ---&gt; Running <span class="keyword">in</span> 874657b8b1c8</span><br><span class="line">Removing intermediate container 874657b8b1c8</span><br><span class="line"> ---&gt; 3398cf709b5c</span><br><span class="line">Successfully built 3398cf709b5c</span><br><span class="line">Successfully tagged composetest_web:latest</span><br><span class="line">WARNING: Image <span class="keyword">for</span> service web was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.</span><br><span class="line">composetest_redis_1 is up-to-date</span><br><span class="line">Creating composetest_web_1 ... <span class="keyword">done</span></span><br><span class="line">Attaching to composetest_redis_1, composetest_web_1</span><br><span class="line">redis_1  | 1:C 08 Sep 07:35:46.399 <span class="comment"># oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo</span></span><br><span class="line">redis_1  | 1:C 08 Sep 07:35:46.400 <span class="comment"># Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started</span></span><br><span class="line">redis_1  | 1:C 08 Sep 07:35:46.400 <span class="comment"># Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:35:46.405 * Running mode=standalone, port=6379.</span><br><span class="line">redis_1  | 1:M 08 Sep 07:35:46.405 <span class="comment"># WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:35:46.405 <span class="comment"># Server initialized</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:35:46.406 <span class="comment"># WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:35:46.406 * Ready to accept connections</span><br><span class="line">redis_1  | 1:signal-handler (1536392231) Received SIGTERM scheduling shutdown...</span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:11.181 <span class="comment"># User requested shutdown...</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:11.182 * Saving the final RDB snapshot before exiting.</span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:11.188 * DB saved on disk</span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:11.188 <span class="comment"># Redis is now ready to exit, bye bye...</span></span><br><span class="line">redis_1  | 1:C 08 Sep 07:37:14.802 <span class="comment"># oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo</span></span><br><span class="line">redis_1  | 1:C 08 Sep 07:37:14.802 <span class="comment"># Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started</span></span><br><span class="line">redis_1  | 1:C 08 Sep 07:37:14.802 <span class="comment"># Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:14.803 * Running mode=standalone, port=6379.</span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:14.804 <span class="comment"># WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:14.804 <span class="comment"># Server initialized</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:14.804 <span class="comment"># WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.</span></span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:14.804 * DB loaded from disk: 0.000 seconds</span><br><span class="line">redis_1  | 1:M 08 Sep 07:37:14.804 * Ready to accept connections</span><br><span class="line">web_1    |  * Serving Flask app <span class="string">"app"</span> (lazy loading)</span><br><span class="line">web_1    |  * Environment: production</span><br><span class="line">web_1    |    WARNING: Do not use the development server <span class="keyword">in</span> a production environment.</span><br><span class="line">web_1    |    Use a production WSGI server instead.</span><br><span class="line">web_1    |  * Debug mode: on</span><br><span class="line">web_1    |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)</span><br><span class="line">web_1    |  * Restarting with <span class="built_in">stat</span></span><br><span class="line">web_1    |  * Debugger is active!</span><br><span class="line">web_1    |  * Debugger PIN: 303-324-532</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在浏览器输入<code>http://localhost:5000/</code>查看应用是否运行正常。</p>
+</li>
+<li><p>在终端中输入<code>docker images ls</code>查看本地镜像：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ docker image ls</span><br><span class="line">REPOSITORY                                 TAG                 IMAGE ID            CREATED             SIZE</span><br><span class="line">composetest_web                            latest              3398cf709b5c        5 minutes ago       78.4MB</span><br><span class="line">redis                                      alpine              162794862d37        12 hours ago        30MB</span><br><span class="line">python                                     3.4-alpine          73266cf72156        3 days ago          67.1MB</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="步骤五：修改Compose文件添加目录挂载"><a href="#步骤五：修改Compose文件添加目录挂载" class="headerlink" title="步骤五：修改Compose文件添加目录挂载"></a>步骤五：修改Compose文件添加目录挂载</h2><p>修改<code>docker-compose.yml</code>，给<code>web</code>服务添加一个目录挂载</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line"><span class="attr">  web:</span></span><br><span class="line"><span class="attr">    build:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">    ports:</span></span><br><span class="line"><span class="bullet">     -</span> <span class="string">"5000:5000"</span></span><br><span class="line"><span class="attr">    volumes:</span></span><br><span class="line"><span class="bullet">     -</span> <span class="string">.:/code</span></span><br><span class="line"><span class="attr">  redis:</span></span><br><span class="line"><span class="attr">    image:</span> <span class="string">"redis:alpine"</span></span><br></pre></td></tr></table></figure>
+<p><code>volumes</code>键值把当前目录挂载到容器内<code>/code</code>目录</p>
+<h2 id="步骤六：使用Compose重新构建和运行应用"><a href="#步骤六：使用Compose重新构建和运行应用" class="headerlink" title="步骤六：使用Compose重新构建和运行应用"></a>步骤六：使用Compose重新构建和运行应用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose up</span><br><span class="line">Creating network <span class="string">"composetest_default"</span> with the default driver</span><br><span class="line">Creating composetest_web_1   ... <span class="keyword">done</span></span><br><span class="line">Creating composetest_redis_1 ... <span class="keyword">done</span></span><br><span class="line">Attaching to composetest_redis_1, composetest_web_1</span><br><span class="line">redis_1  | 1:C 08 Sep 08:00:35.940 <span class="comment"># oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo</span></span><br><span class="line">redis_1  | 1:C 08 Sep 08:00:35.940 <span class="comment"># Redis version=4.0.11, bits=64, commit=00000000, modified=0, pid=1, just started</span></span><br><span class="line">redis_1  | 1:C 08 Sep 08:00:35.940 <span class="comment"># Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf</span></span><br><span class="line">redis_1  | 1:M 08 Sep 08:00:35.941 * Running mode=standalone, port=6379.</span><br><span class="line">redis_1  | 1:M 08 Sep 08:00:35.941 <span class="comment"># WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.</span></span><br><span class="line">redis_1  | 1:M 08 Sep 08:00:35.941 <span class="comment"># Server initialized</span></span><br><span class="line">redis_1  | 1:M 08 Sep 08:00:35.941 <span class="comment"># WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.</span></span><br><span class="line">redis_1  | 1:M 08 Sep 08:00:35.941 * Ready to accept connections</span><br><span class="line">web_1    |  * Serving Flask app <span class="string">"app"</span> (lazy loading)</span><br><span class="line">web_1    |  * Environment: production</span><br><span class="line">web_1    |    WARNING: Do not use the development server <span class="keyword">in</span> a production environment.</span><br><span class="line">web_1    |    Use a production WSGI server instead.</span><br><span class="line">web_1    |  * Debug mode: on</span><br><span class="line">web_1    |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)</span><br><span class="line">web_1    |  * Restarting with <span class="built_in">stat</span></span><br><span class="line">web_1    |  * Debugger is active!</span><br><span class="line">web_1    |  * Debugger PIN: 741-610-125</span><br></pre></td></tr></table></figure>
+<h2 id="步骤七：试一下其他指令"><a href="#步骤七：试一下其他指令" class="headerlink" title="步骤七：试一下其他指令"></a>步骤七：试一下其他指令</h2><p>如果你想让你的服务在后台运行，给<code>docker-compose up</code>添加<code>-d</code>参数，并使用<code>docker-compse ps</code>查看当前的运行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose up -d</span><br><span class="line">Creating network <span class="string">"composetest_default"</span> with the default driver</span><br><span class="line">Creating composetest_redis_1 ... <span class="keyword">done</span></span><br><span class="line">Creating composetest_web_1   ... <span class="keyword">done</span></span><br><span class="line">$ docker-compse ps</span><br><span class="line">       Name                      Command               State           Ports</span><br><span class="line">-------------------------------------------------------------------------------------</span><br><span class="line">composetest_redis_1   docker-entrypoint.sh redis ...   Up      6379/tcp</span><br><span class="line">composetest_web_1     python app.py                    Up      0.0.0.0:5000-&gt;5000/tcp</span><br></pre></td></tr></table></figure>
+<p>使用<code>docker-compose run</code>指令可以在容器内运行指令，例如查看<code>web</code>服务所在容器的环境变量：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ docker-compose run web env</span><br><span class="line">PATH=/usr/<span class="built_in">local</span>/bin:/usr/<span class="built_in">local</span>/sbin:/usr/<span class="built_in">local</span>/bin:/usr/sbin:/usr/bin:/sbin:/bin</span><br><span class="line">HOSTNAME=e0e26cbbba01</span><br><span class="line">TERM=xterm</span><br><span class="line">LANG=C.UTF-8</span><br><span class="line">GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D</span><br><span class="line">PYTHON_VERSION=3.4.9</span><br><span class="line">PYTHON_PIP_VERSION=18.0</span><br><span class="line">HOME=/root</span><br></pre></td></tr></table></figure>
+<p>如果使用<code>docker-compose up -d</code>启动应用，可以使用<code>docker-compose stop</code>指令停止应用。</p>
+<p><code>docker-compose down</code>指令用来关闭所有，包括启动的容器，如果加上<code>--volumes</code>也会删除挂载的目录。</p>
+<h1 id="Compose文件第3版编写指南"><a href="#Compose文件第3版编写指南" class="headerlink" title="Compose文件第3版编写指南"></a>Compose文件第3版编写指南</h1><h2 id="Compose和Docker版本兼容性"><a href="#Compose和Docker版本兼容性" class="headerlink" title="Compose和Docker版本兼容性"></a>Compose和Docker版本兼容性</h2><table>
+<thead>
+<tr>
+<th><strong>Compose 文件格式</strong></th>
+<th><strong>Docker Engine 版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.7</td>
+<td>18.06.0+</td>
+</tr>
+<tr>
+<td>3.6</td>
+<td>18.02.0+</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td>17.12.0+</td>
+</tr>
+<tr>
+<td>3.4</td>
+<td>17.09.0+</td>
+</tr>
+<tr>
+<td>3.3</td>
+<td>17.06.0+</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>17.04.0+</td>
+</tr>
+<tr>
+<td>3.1</td>
+<td>1.13.1+</td>
+</tr>
+<tr>
+<td>3.0</td>
+<td>1.13.0+</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>17.12.0+</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>17.06.0+</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>1.13.0+</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>1.12.0+</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>1.10.0+</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>1.9.1.+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Compose文件结构和示例"><a href="#Compose文件结构和示例" class="headerlink" title="Compose文件结构和示例"></a>Compose文件结构和示例</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">"3"</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  redis:</span></span><br><span class="line"><span class="attr">    image:</span> <span class="attr">redis:alpine</span></span><br><span class="line"><span class="attr">    ports:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">"6379"</span></span><br><span class="line"><span class="attr">    networks:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">frontend</span></span><br><span class="line"><span class="attr">    deploy:</span></span><br><span class="line"><span class="attr">      replicas:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">      update_config:</span></span><br><span class="line"><span class="attr">        parallelism:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">        delay:</span> <span class="number">10</span><span class="string">s</span></span><br><span class="line"><span class="attr">      restart_policy:</span></span><br><span class="line"><span class="attr">        condition:</span> <span class="string">on-failure</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  db:</span></span><br><span class="line"><span class="attr">    image:</span> <span class="attr">postgres:9.4</span></span><br><span class="line"><span class="attr">    volumes:</span></span><br><span class="line"><span class="attr">      - db-data:</span><span class="string">/var/lib/postgresql/data</span></span><br><span class="line"><span class="attr">    networks:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">backend</span></span><br><span class="line"><span class="attr">    deploy:</span></span><br><span class="line"><span class="attr">      placement:</span></span><br><span class="line"><span class="attr">        constraints:</span> <span class="string">[node.role</span> <span class="string">==</span> <span class="string">manager]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  vote:</span></span><br><span class="line"><span class="attr">    image:</span> <span class="string">dockersamples/examplevotingapp_vote:before</span></span><br><span class="line"><span class="attr">    ports:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">"5000:80"</span></span><br><span class="line"><span class="attr">    networks:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">frontend</span></span><br><span class="line"><span class="attr">    depends_on:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">redis</span></span><br><span class="line"><span class="attr">    deploy:</span></span><br><span class="line"><span class="attr">      replicas:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">      update_config:</span></span><br><span class="line"><span class="attr">        parallelism:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">      restart_policy:</span></span><br><span class="line"><span class="attr">        condition:</span> <span class="string">on-failure</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  result:</span></span><br><span class="line"><span class="attr">    image:</span> <span class="string">dockersamples/examplevotingapp_result:before</span></span><br><span class="line"><span class="attr">    ports:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">"5001:80"</span></span><br><span class="line"><span class="attr">    networks:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">backend</span></span><br><span class="line"><span class="attr">    depends_on:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">db</span></span><br><span class="line"><span class="attr">    deploy:</span></span><br><span class="line"><span class="attr">      replicas:</span> <span class="number">1</span></span><br><span class="line"><span class="attr">      update_config:</span></span><br><span class="line"><span class="attr">        parallelism:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">        delay:</span> <span class="number">10</span><span class="string">s</span></span><br><span class="line"><span class="attr">      restart_policy:</span></span><br><span class="line"><span class="attr">        condition:</span> <span class="string">on-failure</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  worker:</span></span><br><span class="line"><span class="attr">    image:</span> <span class="string">dockersamples/examplevotingapp_worker</span></span><br><span class="line"><span class="attr">    networks:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">frontend</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">backend</span></span><br><span class="line"><span class="attr">    deploy:</span></span><br><span class="line"><span class="attr">      mode:</span> <span class="string">replicated</span></span><br><span class="line"><span class="attr">      replicas:</span> <span class="number">1</span></span><br><span class="line"><span class="attr">      labels:</span> <span class="string">[APP=VOTING]</span></span><br><span class="line"><span class="attr">      restart_policy:</span></span><br><span class="line"><span class="attr">        condition:</span> <span class="string">on-failure</span></span><br><span class="line"><span class="attr">        delay:</span> <span class="number">10</span><span class="string">s</span></span><br><span class="line"><span class="attr">        max_attempts:</span> <span class="number">3</span></span><br><span class="line"><span class="attr">        window:</span> <span class="number">120</span><span class="string">s</span></span><br><span class="line"><span class="attr">      placement:</span></span><br><span class="line"><span class="attr">        constraints:</span> <span class="string">[node.role</span> <span class="string">==</span> <span class="string">manager]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  visualizer:</span></span><br><span class="line"><span class="attr">    image:</span> <span class="string">dockersamples/visualizer:stable</span></span><br><span class="line"><span class="attr">    ports:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">"8080:8080"</span></span><br><span class="line"><span class="attr">    stop_grace_period:</span> <span class="number">1</span><span class="string">m30s</span></span><br><span class="line"><span class="attr">    volumes:</span></span><br><span class="line"><span class="bullet">      -</span> <span class="string">"/var/run/docker.sock:/var/run/docker.sock"</span></span><br><span class="line"><span class="attr">    deploy:</span></span><br><span class="line"><span class="attr">      placement:</span></span><br><span class="line"><span class="attr">        constraints:</span> <span class="string">[node.role</span> <span class="string">==</span> <span class="string">manager]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">networks:</span></span><br><span class="line"><span class="attr">  frontend:</span></span><br><span class="line"><span class="attr">  backend:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">volumes:</span></span><br><span class="line"><span class="attr">  db-data:</span></span><br></pre></td></tr></table></figure>
+<h2 id="服务配置指南"><a href="#服务配置指南" class="headerlink" title="服务配置指南"></a>服务配置指南</h2><p>Compose文件是一个定义<code>服务</code>、<code>网络</code>、<code>挂载卷</code>的<code>YAML</code>文件，默认的路径是<code>./docker-compose.yml</code>。</p>
+<blockquote>
+<p><code>.yml</code>或<code>.yaml</code>扩展名都是可以的</p>
+</blockquote>
+<p>服务定义包含了应用于该服务所启动的各个容器的配置，就像将命令行参数传递给<code>docker container create</code>一样。同样，网络和卷定义类似于<code>docker network create</code>和<code>docker volume create</code>。</p>
+<p>跟<code>docker container create</code>一样，配置项是在Dockerfile中指定的，如<code>CMD</code>, <code>EXPOSE</code>, <code>VOLUME</code>, <code>ENV</code>, 因为这些都是默认的，所以不需要再<code>docker-compose.yml</code>中再次指定。</p>
+<p>配置中可以使用类似Bash的<code>${VARIABLE}</code>语法在值中使用环境变量。</p>
+<h3 id="build"><a href="#build" class="headerlink" title="build"></a>build</h3><p>构建时应用的配置。</p>
+<p><code>build</code>可以指定为包含构建上下文路径的字符串：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line"><span class="attr">  webapp:</span></span><br><span class="line"><span class="attr">    build:</span> <span class="string">./dir</span></span><br></pre></td></tr></table></figure>
+<p>或者作为一个在context下面指定路径的对象以及可选的<code>Dockerfile</code>和<code>args</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">'3'</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line"><span class="attr">  webapp:</span></span><br><span class="line"><span class="attr">    build:</span></span><br><span class="line"><span class="attr">      context:</span> <span class="string">./dir</span></span><br><span class="line"><span class="attr">      dockerfile:</span> <span class="string">Dockerfile-alternate</span></span><br><span class="line"><span class="attr">      args:</span></span><br><span class="line"><span class="attr">        buildno:</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>如果在<code>build</code>时指定<code>image</code>，Compose会按照<code>image</code>中指定的<code>imageName</code>和<code>tag</code>构建镜像：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span> <span class="string">./dir</span></span><br><span class="line"><span class="attr">image:</span> <span class="attr">webapp:1.0</span></span><br></pre></td></tr></table></figure>
+<p>上面的配置表示从<code>./dir</code>目录构建一个名为<code>webapp</code>标签为<code>1.0</code>的镜像。</p>
+<blockquote>
+<p>该配置项在使用<a href="https://docs.docker.com/engine/reference/commandline/stack_deploy/" target="_blank" rel="noopener">deploying a stack in swarm mode</a>构建时会被忽略。</p>
+</blockquote>
+<h4 id="CONTEXT"><a href="#CONTEXT" class="headerlink" title="CONTEXT"></a>CONTEXT</h4><p>包含Dockerfile的目录的路径，或者是git仓库的url。</p>
+<p>当提供的值是相对路径时，则表示相对于Compose文件的位置。此目录也是发送到Docker守护程序的构建上下文。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">./dir</span></span><br></pre></td></tr></table></figure>
+<h4 id="DOCKERFILE"><a href="#DOCKERFILE" class="headerlink" title="DOCKERFILE"></a>DOCKERFILE</h4><p>Compose使用备用Dockerfile来构建，同时还必须指定构建路径。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  dockerfile:</span> <span class="string">Dockerfile-alternate</span></span><br></pre></td></tr></table></figure>
+<h4 id="ARGS"><a href="#ARGS" class="headerlink" title="ARGS"></a>ARGS</h4><p>添加构建参数，这些参数只能在构建过程中访问。</p>
+<p>首先，在Dockerfile中指定参数：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">ARG</span> <span class="string">buildno</span></span><br><span class="line"><span class="string">ARG</span> <span class="string">gitcommithash</span></span><br><span class="line"></span><br><span class="line"><span class="string">RUN</span> <span class="string">echo</span> <span class="string">"Build number: $buildno"</span></span><br><span class="line"><span class="string">RUN</span> <span class="string">echo</span> <span class="string">"Based on commit: $gitcommithash"</span></span><br></pre></td></tr></table></figure>
+<p>然后在构建键下指定参数。可以传递映射或列表：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  args:</span></span><br><span class="line"><span class="attr">    buildno:</span> <span class="number">1</span></span><br><span class="line"><span class="attr">    gitcommithash:</span> <span class="string">cdc3b19</span></span><br><span class="line"></span><br><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  args:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">buildno=1</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">gitcommithash=cdc3b19</span></span><br></pre></td></tr></table></figure>
+<p>参数也可以省略，在这种情况下，构建时的值是运行Compose的环境中的值。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">args:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">buildno</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">gitcommithash</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p> YAML中的布尔值(<code>true</code>, <code>false</code>, <code>yes</code>, <code>no</code>, <code>on</code>, <code>off</code>) 必须用引号括起来，以便解析器将它们解释为字符串。</p>
+</blockquote>
+<h4 id="CACHE-FROM"><a href="#CACHE-FROM" class="headerlink" title="CACHE_FROM"></a>CACHE_FROM</h4><blockquote>
+<p>v3.2新增</p>
+</blockquote>
+<p>设置一些引擎用于缓存解决方案的镜像：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  cache_from:</span></span><br><span class="line"><span class="attr">    - alpine:</span><span class="string">latest</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">corp/web_app:3.14</span></span><br></pre></td></tr></table></figure>
+<h4 id="LABELS"><a href="#LABELS" class="headerlink" title="LABELS"></a>LABELS</h4><blockquote>
+<p>v3.3新增</p>
+</blockquote>
+<p>使用<code>Docker标签</code>将元数据添加到生成的镜像中。可以使用数组或字典。</p>
+<p>建议使用反向DNS表示法来防止标签与其他软件使用的标签冲突。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  labels:</span></span><br><span class="line">    <span class="string">com.example.description:</span> <span class="string">"Accounting webapp"</span></span><br><span class="line">    <span class="string">com.example.department:</span> <span class="string">"Finance"</span></span><br><span class="line">    <span class="string">com.example.label-with-empty-value:</span> <span class="string">""</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  labels:</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">"com.example.description=Accounting webapp"</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">"com.example.department=Finance"</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">"com.example.label-with-empty-value"</span></span><br></pre></td></tr></table></figure>
+<h4 id="SHM-SIZE"><a href="#SHM-SIZE" class="headerlink" title="SHM_SIZE"></a>SHM_SIZE</h4><blockquote>
+<p>v3.5新增</p>
+</blockquote>
+<p>为此构建的容器设置<code>/dev/shm</code>分区的大小。</p>
+<p>指定表示字节数的整数值：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  shm_size:</span> <span class="number">10000000</span></span><br></pre></td></tr></table></figure>
+<p>或表示字节值的字符串：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">build:</span></span><br><span class="line"><span class="attr">  context:</span> <span class="string">.</span></span><br><span class="line"><span class="attr">  shm_size:</span> <span class="string">'2gb'</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="TARGET"><a href="#TARGET" class="headerlink" title="TARGET"></a>TARGET</h4><blockquote>
+<p>v3.4新增</p>
+</blockquote>
+<p>根据<code>Dockerfile</code>中的定义构建指定的阶段：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">build:</span><br><span class="line">    context: .</span><br><span class="line">    target: prod</span><br></pre></td></tr></table></figure>
+<h3 id="cap-add-cap-drop"><a href="#cap-add-cap-drop" class="headerlink" title="cap_add, cap_drop"></a>cap_add, cap_drop</h3><p>添加或删除容器功能：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cap_add:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">ALL</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cap_drop:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">NET_ADMIN</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">SYS_ADMIN</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>该配置项在使用<a href="https://docs.docker.com/engine/reference/commandline/stack_deploy/" target="_blank" rel="noopener">deploying a stack in swarm mode</a>构建时会被忽略。</p>
+</blockquote>
+<h3 id="command"><a href="#command" class="headerlink" title="command"></a>command</h3><p>覆盖默认命令：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">command:</span> <span class="string">bundle</span> <span class="string">exec</span> <span class="string">thin</span> <span class="bullet">-p</span> <span class="number">3000</span></span><br></pre></td></tr></table></figure>
+<p>该命令也可以是一个列表，方式类似于dockerfile：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">command:</span> <span class="string">["bundle",</span> <span class="string">"exec"</span><span class="string">,</span> <span class="string">"thin"</span><span class="string">,</span> <span class="string">"-p"</span><span class="string">,</span> <span class="string">"3000"</span><span class="string">]</span></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2017/12/22/Thymeleaf用法示例/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/12/22/Thymeleaf用法示例/" itemprop="url">
+                  Thymeleaf用法示例
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T13:15:48+08:00">
+                2017-12-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="th-onclick"><a href="#th-onclick" class="headerlink" title="th:onclick"></a><code>th:onclick</code></h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">th:onlick="|test('$&#123;param&#125;')|"</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2017/12/14/macOS制作CentOS安装U盘/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/12/14/macOS制作CentOS安装U盘/" itemprop="url">
+                  macOS制作CentOS安装U盘
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-14T19:23:23+08:00">
+                2017-12-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="查看U盘"><a href="#查看U盘" class="headerlink" title="查看U盘"></a>查看U盘</h1><p>第一步，先插入U盘，打开终端使用下面的命令查看U盘是否已经mount到系统，这时在Finder下也能看到U盘。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskuitl list</span><br></pre></td></tr></table></figure></p>
+<p>终端输出类似如下内容<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">wangjindeMacBook-Pro:~ wangjin$ diskutil list</span><br><span class="line">/dev/disk0 (internal):</span><br><span class="line">   <span class="comment">#:                       TYPE NAME                    SIZE       IDENTIFIER</span></span><br><span class="line">   0:      GUID_partition_scheme                         251.0 GB   disk0</span><br><span class="line">   1:                        EFI EFI                     314.6 MB   disk0s1</span><br><span class="line">   2:                 Apple_APFS Container disk1         250.7 GB   disk0s2</span><br><span class="line"></span><br><span class="line">/dev/disk1 (synthesized):</span><br><span class="line">   <span class="comment">#:                       TYPE NAME                    SIZE       IDENTIFIER</span></span><br><span class="line">   0:      APFS Container Scheme -                      +250.7 GB   disk1</span><br><span class="line">                                 Physical Store disk0s2</span><br><span class="line">   1:                APFS Volume Macintosh HD            222.4 GB   disk1s1</span><br><span class="line">   2:                APFS Volume Preboot                 23.1 MB    disk1s2</span><br><span class="line">   3:                APFS Volume Recovery                506.6 MB   disk1s3</span><br><span class="line">   4:                APFS Volume VM                      3.2 GB     disk1s4</span><br><span class="line"></span><br><span class="line">/dev/disk2 (external, physical):</span><br><span class="line">   <span class="comment">#:                       TYPE NAME                    SIZE       IDENTIFIER</span></span><br><span class="line">   0:     FDisk_partition_scheme                        *62.1 GB    disk2</span><br><span class="line">   1:               Windows_NTFS WANGJIN                 62.1 GB    disk2s1</span><br></pre></td></tr></table></figure></p>
+<p>可以看到，上面的/dev/disk2即是U盘挂载点</p>
+<h1 id="取消U盘挂载"><a href="#取消U盘挂载" class="headerlink" title="取消U盘挂载"></a>取消U盘挂载</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">diskutil unmountDisk /dev/disk2</span><br></pre></td></tr></table></figure>
+<h1 id="写入系统镜像到U盘"><a href="#写入系统镜像到U盘" class="headerlink" title="写入系统镜像到U盘"></a>写入系统镜像到U盘</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dd <span class="keyword">if</span>=/Users/wangjin/Downloads/CentOS-7-x86_64-DVD-1708.iso of=/dev/disk2 bs=1m</span><br></pre></td></tr></table></figure>
+<p><code>bs=1m</code>表示设置写入块大小</p>
+<h1 id="查看写入进度"><a href="#查看写入进度" class="headerlink" title="查看写入进度"></a>查看写入进度</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo killall -29 dd</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2017/06/12/Intellij-IDEA配置使用Lombok/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/06/12/Intellij-IDEA配置使用Lombok/" itemprop="url">
+                  Intellij IDEA配置使用Lombok
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-12T11:31:21+08:00">
+                2017-06-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="安装Lombok插件"><a href="#安装Lombok插件" class="headerlink" title="安装Lombok插件"></a>安装Lombok插件</h1><p><img src="/images/install-plugin.png" alt="安装Lombok插件"></p>
+<h1 id="开启Annotation-Prcessing"><a href="#开启Annotation-Prcessing" class="headerlink" title="开启Annotation Prcessing"></a>开启Annotation Prcessing</h1><p><img src="/images/enable-annotation.png" alt="开启Annotation Prcessing"></p>
+<h1 id="添加Lombok依赖"><a href="#添加Lombok依赖" class="headerlink" title="添加Lombok依赖"></a>添加Lombok依赖</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;lombok&lt;/artifactId&gt;</span><br><span class="line">    &lt;scope&gt;provided&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2017/05/09/Spring-Data-JPA-查询方法名关键字/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/05/09/Spring-Data-JPA-查询方法名关键字/" itemprop="url">
+                  Spring Data JPA 查询方法名关键字
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-09T11:25:24+08:00">
+                2017-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <style>
+table{
+    word-break:break-all; word-wrap:break-all; 
+}
+
+</style>
+
+<table>
+<thead>
+<tr>
+<th>关键字</th>
+<th>示例</th>
+<th>JPQL片段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>And</td>
+<td>findByLastnameAndFirstname</td>
+<td>… where x.lastname = ?1 and x.firstname = ?2</td>
+</tr>
+<tr>
+<td>Or</td>
+<td>findByLastnameOrFirstname</td>
+<td>… where x.lastname = ?1 or x.firstname = ?2</td>
+</tr>
+<tr>
+<td>Is,Equals</td>
+<td>findByFirstname,<br>findByFirstnameIs,<br>findByFirstnameEquals</td>
+<td>… where x.firstname = ?1</td>
+</tr>
+<tr>
+<td>Between</td>
+<td>findByStartDateBetween</td>
+<td>… where x.startDate between ?1 and ?2</td>
+</tr>
+<tr>
+<td>LessThan</td>
+<td>findByAgeLessThan</td>
+<td>… where x.age &lt; ?1</td>
+</tr>
+<tr>
+<td>LessThanEqual</td>
+<td>findByAgeLessThanEqual</td>
+<td>… where x.age &lt;= ?1</td>
+</tr>
+<tr>
+<td>GreaterThan</td>
+<td>findByAgeGreaterThan</td>
+<td>… where x.age &gt; ?1</td>
+</tr>
+<tr>
+<td>GreaterThanEqual</td>
+<td>findByAgeGreaterThanEqual</td>
+<td>… where x.age &gt;= ?1</td>
+</tr>
+<tr>
+<td>After</td>
+<td>findByStartDateAfter</td>
+<td>… where x.startDate &gt; ?1</td>
+</tr>
+<tr>
+<td>Before</td>
+<td>findByStartDateBefore</td>
+<td>… where x.startDate &lt; ?1</td>
+</tr>
+<tr>
+<td>IsNull</td>
+<td>findByAgeIsNull</td>
+<td>… where x.age is null</td>
+</tr>
+<tr>
+<td>IsNotNull,NotNull</td>
+<td>findByAge(Is)NotNull</td>
+<td>… where x.age not null</td>
+</tr>
+<tr>
+<td>Like</td>
+<td>findByFirstnameLike</td>
+<td>… where x.firstname like ?1</td>
+</tr>
+<tr>
+<td>NotLike</td>
+<td>findByFirstnameNotLike</td>
+<td>… where x.firstname not like ?1</td>
+</tr>
+<tr>
+<td>StartingWith</td>
+<td>findByFirstnameStartingWith</td>
+<td>… where x.firstname like ?1 (parameter bound with appended %)</td>
+</tr>
+<tr>
+<td>EndingWith</td>
+<td>findByFirstnameEndingWith</td>
+<td>… where x.firstname like ?1 (parameter bound with prepended %)</td>
+</tr>
+<tr>
+<td>Containing</td>
+<td>findByFirstnameContaining</td>
+<td>… where x.firstname like ?1 (parameter bound wrapped in %)</td>
+</tr>
+<tr>
+<td>OrderBy</td>
+<td>findByAgeOrderByLastnameDesc</td>
+<td>… where x.age = ?1 order by x.lastname desc</td>
+</tr>
+<tr>
+<td>Not</td>
+<td>findByLastnameNot</td>
+<td>… where x.lastname &lt;&gt; ?1</td>
+</tr>
+<tr>
+<td>In</td>
+<td>findByAgeIn(Collection<age> ages)</age></td>
+<td>… where x.age in ?1</td>
+</tr>
+<tr>
+<td>NotIn</td>
+<td>findByAgeNotIn(Collection<age> age)</age></td>
+<td>… where x.age not in ?1</td>
+</tr>
+<tr>
+<td>True</td>
+<td>findByActiveTrue()</td>
+<td>… where x.active = true</td>
+</tr>
+<tr>
+<td>False</td>
+<td>findByActiveFalse()</td>
+<td>… where x.active = false</td>
+</tr>
+<tr>
+<td>IgnoreCase</td>
+<td>findByFirstnameIgnoreCase</td>
+<td>… where UPPER(x.firstame) = UPPER(?1)</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2017/04/28/JavaScript学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/28/JavaScript学习笔记/" itemprop="url">
+                  JavaScript学习笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-28T20:46:23+08:00">
+                2017-04-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><p>JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都把JavaScript代码放到<code>&lt;head&gt;</code>中：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">     alert('Hello, world'); // 页面弹出Hello，world提示框</span></span><br><span class="line"><span class="undefined">   </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">   ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/28/JavaScript学习笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2017/04/14/Git添加多remote/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/14/Git添加多remote/" itemprop="url">
+                  Git添加多remote
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-14T15:06:46+08:00">
+                2017-04-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="添加remote"><a href="#添加remote" class="headerlink" title="添加remote"></a>添加remote</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add [remote名称] &lt;git_url&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="删除remote"><a href="#删除remote" class="headerlink" title="删除remote"></a>删除remote</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote remove [remote名称] &lt;git_url&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="添加多个同名remote"><a href="#添加多个同名remote" class="headerlink" title="添加多个同名remote"></a>添加多个同名remote</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote <span class="built_in">set</span>-url --add [remote名称] &lt;git_url&gt;</span><br></pre></td></tr></table></figure>
+<h1 id="删除同名remote"><a href="#删除同名remote" class="headerlink" title="删除同名remote"></a>删除同名remote</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote <span class="built_in">set</span>-url --delete [remote名称] &lt;git_url&gt;</span><br></pre></td></tr></table></figure>
+<p>配置保存在<code>.git/config</code>文件中</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.wangjin.online/2017/04/13/OSX通过Homebrew安装JDK/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JUSTKIDDING">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/04/13/OSX通过Homebrew安装JDK/" itemprop="url">
+                  OSX通过Homebrew安装JDK
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-13T09:17:51+08:00">
+                2017-04-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a>安装Homebrew</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span><br></pre></td></tr></table></figure>
+<h1 id="安装Homebrew-Cask"><a href="#安装Homebrew-Cask" class="headerlink" title="安装Homebrew Cask"></a>安装Homebrew Cask</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew tap caskroom/cask</span><br></pre></td></tr></table></figure>
+<p>应用也可以通过 App Store 安装，而且有些应用只能通过 App Store 安装，比如 Xcode 等一些 Apple 的应用。App Store 没有对应的命令行工具，还需要 Apple ID。倒是更新起来很方便。</p>
+<p>几乎所有常用的应用都可以通过 brew-cask 安装，而且是从应用的官网上下载，所以你要安装新的应用时，建议用 brew-cask 安装。如果你不知道应用在 brew-cask 中的 ID，可以先用<code>brew cask search</code>命令搜索</p>
+<blockquote>
+<p><a href="http://caskroom.io/" target="_blank" rel="noopener">Homebrew Cask官网</a></p>
+</blockquote>
+<h1 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install java</span><br></pre></td></tr></table></figure>
+<h1 id="如果提示已经安装，则使用"><a href="#如果提示已经安装，则使用" class="headerlink" title="如果提示已经安装，则使用"></a>如果提示已经安装，则使用</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask reinstall java</span><br></pre></td></tr></table></figure>
+<h1 id="如果你需要安装指定版本，可以使用homebrew-cask-versions"><a href="#如果你需要安装指定版本，可以使用homebrew-cask-versions" class="headerlink" title="如果你需要安装指定版本，可以使用homebrew-cask-versions"></a>如果你需要安装指定版本，可以使用<code>homebrew-cask-versions</code></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew tap caskroom/versions</span><br><span class="line">brew cask install java8</span><br></pre></td></tr></table></figure>
+<h1 id="更新cask安装应用"><a href="#更新cask安装应用" class="headerlink" title="更新cask安装应用"></a>更新cask安装应用</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask upgrade</span><br></pre></td></tr></table></figure>
+<h1 id="测试JDK是否正确安装"><a href="#测试JDK是否正确安装" class="headerlink" title="测试JDK是否正确安装"></a>测试JDK是否正确安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ java -version</span><br></pre></td></tr></table></figure>
+<h1 id="安装多个JDK版本并切换"><a href="#安装多个JDK版本并切换" class="headerlink" title="安装多个JDK版本并切换"></a>安装多个JDK版本并切换</h1><p>使用<code>brew cask</code>安装JDK</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">brew cask install java6  #JDK6</span><br><span class="line">brew cask install java8  #JDK8</span><br><span class="line">brew cask install java   #目前最新java</span><br></pre></td></tr></table></figure>
+<p>修改shell(.bash_profile,.bashrc,.zshrc)配置添加切换</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> Switch JDK</span></span><br><span class="line">export JAVA_6_HOME="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"</span><br><span class="line">export JAVA_8_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home"</span><br><span class="line">export JAVA_11_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home"</span><br><span class="line">export JAVA_HOME=$JAVA_8_HOME  # Default JDK8</span><br><span class="line">alias jdk6="export JAVA_HOME=$JAVA_6_HOME;java -version"  # to JDK6 </span><br><span class="line">alias jdk8="export JAVA_HOME=$JAVA_8_HOME;java -version"  # to JDK8</span><br><span class="line">alias jdk11="export JAVA_HOME=$JAVA_11_HOME;java -version" # to 最新JDK</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="JUSTKIDDING">
+          <p class="site-author-name" itemprop="name">JUSTKIDDING</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JUSTKIDDING</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+    
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "cb009bcb9ae943af9bf32ecaac867bd2",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
